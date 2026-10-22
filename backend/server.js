@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 
 const app = express();
 
-app.use(cors({ origin: ["http://localhost:5173", "https://blood-connect-blue.vercel.app"] }));
+app.use(cors({ origin: ["http://localhost:5173", "https://blood-connect-blue.vercel.app", "https://blood-connect-3pcy5svos-yazhini6.vercel.app"] }));
 app.use(express.json());
 
 const userSchema = new mongoose.Schema({
@@ -374,4 +374,6 @@ mongoose.connect(
     console.error("Check MongoDB service and MONGODB_URI in backend/.env");
     process.exit(1);
   });
+
+
 
